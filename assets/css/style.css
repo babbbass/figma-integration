@@ -21,6 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  /* width: 100%; */
 }
 
 .card {
@@ -31,12 +32,13 @@ body {
   text-align: center;
 }
 
-.card-img {
-  margin-top: 5px;
-}
 .card img {
+  border-radius: 12px;
+}
+
+.card-img {
   width: 440px;
-  height: 300px;
+  margin-top: 5px;
   border-radius: 12px;
 }
 
@@ -139,10 +141,25 @@ hr {
   position: absolute;
 }
 
+.likes img:nth-child(1) {
+  left: 0;
+}
+
 .likes img:nth-child(2) {
   left: 10px;
 }
 
 .likes img:nth-child(3) {
   left: 20px;
+}
+
+@media screen and (max-width: 450px) {
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  .card-img {
+    width: 95%;
+  }
 }
